@@ -1,0 +1,322 @@
+[
+  {
+    "id": "1",
+    "title": "Exploring the Hidden Gems of Tuscany",
+    "author": "Sophia Taylor",
+    "published_date": "2023-09-15",
+    "tags": [
+      "Travel",
+      "Italy",
+      "Culture"
+    ],
+    "summary": "Discover lesser-known spots in Tuscany that are perfect for your next Italian adventure.",
+    "content": "Tuscany is more than just Florence and Pisa. Dive into medieval villages...",
+    "likes": 560,
+    "comments_count": 87,
+    "is_published": true
+  },
+  {
+    "id": "2",
+    "title": "The Health Benefits of Mindful Eating",
+    "author": "Liam Jackson",
+    "published_date": "2023-10-05",
+    "tags": [
+      "Health",
+      "Wellness",
+      "Nutrition"
+    ],
+    "summary": "Learn how practicing mindful eating can improve both your physical and mental health.",
+    "content": "Mindful eating encourages you to slow down, savor your meals...",
+    "likes": 345,
+    "comments_count": 40,
+    "is_published": true
+  },
+  {
+    "id": "3",
+    "title": "Top 5 Books to Read This Summer",
+    "author": "Emma Wilson",
+    "published_date": "2023-06-20",
+    "tags": [
+      "Books",
+      "Reading",
+      "Lifestyle"
+    ],
+    "summary": "From thrilling mysteries to heartwarming romances, find out what to add to your summer reading list.",
+    "content": "Summer is the perfect time to dive into a great book. Whether you love fiction...",
+    "likes": 420,
+    "comments_count": 52,
+    "is_published": true
+  },
+  {
+    "id": "4",
+    "title": "Mastering the Art of Home Gardening",
+    "author": "Oliver Davis",
+    "published_date": "2023-04-15",
+    "tags": [
+      "Gardening",
+      "DIY",
+      "Sustainability"
+    ],
+    "summary": "Transform your backyard into a flourishing oasis with these gardening tips.",
+    "content": "Starting a garden may seem daunting, but with a little planning...",
+    "likes": 480,
+    "comments_count": 67,
+    "is_published": true
+  },
+  {
+    "id": "5",
+    "title": "The Secret to Baking Perfect Sourdough Bread",
+    "author": "Ava Martin",
+    "published_date": "2023-03-22",
+    "tags": [
+      "Baking",
+      "Cooking",
+      "Food"
+    ],
+    "summary": "Step-by-step guide to achieving a perfect crust and soft interior in your sourdough bread.",
+    "content": "Baking sourdough bread is both an art and a science. Begin by preparing your starter...",
+    "likes": 290,
+    "comments_count": 33,
+    "is_published": false
+  },
+  {
+    "id": "6",
+    "title": "Why Meditation Is Essential for Mental Clarity",
+    "author": "Emily Johnson",
+    "published_date": "2023-07-10",
+    "tags": [
+      "Mental Health",
+      "Meditation",
+      "Self-Help"
+    ],
+    "summary": "Discover how meditation can improve focus and reduce stress in your daily life.",
+    "content": "Meditation has been practiced for thousands of years as a way to achieve mental clarity...",
+    "likes": 410,
+    "comments_count": 58,
+    "is_published": true
+  },
+  {
+    "id": "7",
+    "title": "10 Must-Try Street Foods Around the World",
+    "author": "David Lee",
+    "published_date": "2023-08-12",
+    "tags": [
+      "Food",
+      "Travel",
+      "Culture"
+    ],
+    "summary": "From savory to sweet, explore iconic street foods you need to try on your next adventure.",
+    "content": "Street food is often the heart of a city's culture. Try satay in Bangkok...",
+    "likes": 670,
+    "comments_count": 120,
+    "is_published": true
+  },
+  {
+    "id": "8",
+    "title": "Decorating on a Budget: Affordable Home Design Tips",
+    "author": "Sophia Taylor",
+    "published_date": "2023-05-05",
+    "tags": [
+      "Interior Design",
+      "DIY",
+      "Budget"
+    ],
+    "summary": "Spruce up your home with these cost-effective decorating ideas.",
+    "content": "Creating a beautiful living space doesn’t have to break the bank...",
+    "likes": 315,
+    "comments_count": 25,
+    "is_published": true
+  },
+  {
+    "id": "9",
+    "title": "The Beginner’s Guide to Stargazing",
+    "author": "Nathan Clark",
+    "published_date": "2023-11-02",
+    "tags": [
+      "Astronomy",
+      "Science",
+      "Outdoor"
+    ],
+    "summary": "Learn the basics of stargazing and the equipment you need to get started.",
+    "content": "Stargazing is a fantastic hobby that connects us to the wonders of the universe...",
+    "likes": 280,
+    "comments_count": 18,
+    "is_published": true
+  },
+  {
+    "id": "10",
+    "title": "The History and Charm of Vintage Fashion",
+    "author": "Sophia Edwards",
+    "published_date": "2023-12-01",
+    "tags": [
+      "Fashion",
+      "History",
+      "Lifestyle"
+    ],
+    "summary": "Dive into the timeless trends of vintage fashion and how to incorporate them into your wardrobe.",
+    "content": "Vintage fashion has a unique charm, blending style with history...",
+    "likes": 345,
+    "comments_count": 36,
+    "is_published": true
+  },
+  {
+    "id": "11",
+    "title": "Top Destinations for Solo Travelers",
+    "author": "Sophia Taylor",
+    "published_date": "2023-12-02",
+    "tags": [
+      "Travel",
+      "Adventure",
+      "Solo"
+    ],
+    "summary": "Explore the best places around the world for a solo adventure.",
+    "content": "Solo travel is a unique experience that helps you discover yourself...",
+    "likes": 450,
+    "comments_count": 55,
+    "is_published": true
+  },
+  {
+    "id": "12",
+    "title": "The Power of Positive Thinking",
+    "author": "Emily Johnson",
+    "published_date": "2023-11-25",
+    "tags": [
+      "Self-Help",
+      "Wellness",
+      "Mental Health"
+    ],
+    "summary": "How cultivating positivity can transform your life.",
+    "content": "Positive thinking isn't just a concept; it's a mindset shift that brings real change...",
+    "likes": 340,
+    "comments_count": 41,
+    "is_published": true
+  },
+  {
+    "id": "13",
+    "title": "How to Create a Home Library on a Budget",
+    "author": "Emma Wilson",
+    "published_date": "2023-10-18",
+    "tags": [
+      "Books",
+      "DIY",
+      "Interior Design"
+    ],
+    "summary": "Transform a small space into a cozy library without spending a fortune.",
+    "content": "A home library is every book lover's dream. Here's how to make it a reality...",
+    "likes": 365,
+    "comments_count": 48,
+    "is_published": true
+  },
+  {
+    "id": "14",
+    "title": "5 Easy Recipes for a Weekend Picnic",
+    "author": "Ava Martin",
+    "published_date": "2023-09-22",
+    "tags": [
+      "Cooking",
+      "Lifestyle",
+      "Recipes"
+    ],
+    "summary": "Quick and delicious recipes to elevate your next picnic outing.",
+    "content": "Planning a picnic? These simple recipes are perfect for an outdoor treat...",
+    "likes": 310,
+    "comments_count": 27,
+    "is_published": true
+  },
+  {
+    "id": "15",
+    "title": "Seasonal Gardening Tips for Beginners",
+    "author": "Oliver Davis",
+    "published_date": "2023-09-12",
+    "tags": [
+      "Gardening",
+      "DIY",
+      "Seasons"
+    ],
+    "summary": "Tips and tricks for growing seasonal plants successfully.",
+    "content": "Understanding the seasons is crucial for successful gardening...",
+    "likes": 490,
+    "comments_count": 70,
+    "is_published": true
+  },
+  {
+    "id": "16",
+    "title": "Why Street Food Tells the Story of a Culture",
+    "author": "David Lee",
+    "published_date": "2023-08-30",
+    "tags": [
+      "Food",
+      "Culture",
+      "Travel"
+    ],
+    "summary": "Uncover how street food reflects a country's heritage and traditions.",
+    "content": "Street food isn't just about flavor; it's about history and community...",
+    "likes": 520,
+    "comments_count": 100,
+    "is_published": true
+  },
+  {
+    "id": "17",
+    "title": "Vintage Accessories That Never Go Out of Style",
+    "author": "Sophia Edwards",
+    "published_date": "2023-10-05",
+    "tags": [
+      "Fashion",
+      "Vintage",
+      "Lifestyle"
+    ],
+    "summary": "Discover timeless accessories that always stay in vogue.",
+    "content": "Adding vintage accessories to your wardrobe is a great way to showcase style...",
+    "likes": 400,
+    "comments_count": 34,
+    "is_published": true
+  },
+  {
+    "id": "18",
+    "title": "The Benefits of Stargazing for Relaxation",
+    "author": "Nathan Clark",
+    "published_date": "2023-10-12",
+    "tags": [
+      "Astronomy",
+      "Wellness",
+      "Outdoor"
+    ],
+    "summary": "Why staring at the night sky is great for your mental health.",
+    "content": "Stargazing offers a break from our busy lives and connects us with the universe...",
+    "likes": 280,
+    "comments_count": 19,
+    "is_published": true
+  },
+  {
+    "id": "19",
+    "title": "Budget-Friendly International Travel Tips",
+    "author": "Sophia Taylor",
+    "published_date": "2023-11-11",
+    "tags": [
+      "Travel",
+      "Budget",
+      "Tips"
+    ],
+    "summary": "How to see the world without breaking the bank.",
+    "content": "Traveling internationally can be affordable if you know these tricks...",
+    "likes": 570,
+    "comments_count": 75,
+    "is_published": true
+  },
+  {
+    "id": "20",
+    "title": "Meditation Techniques for Beginners",
+    "author": "Emily Johnson",
+    "published_date": "2023-10-28",
+    "tags": [
+      "Meditation",
+      "Wellness",
+      "Mental Health"
+    ],
+    "summary": "Simple meditation practices to help you get started.",
+    "content": "Meditation can seem daunting at first, but starting small helps...",
+    "likes": 320,
+    "comments_count": 37,
+    "is_published": true
+  }
+]

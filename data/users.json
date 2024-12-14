@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "name": "Sophia Taylor",
+        "email": "sophia.taylor@example.com",
+        "bio": "Travel enthusiast and interior design aficionado. Sharing my adventures and tips for creating beautiful spaces.",
+        "avatar": "https://i.pravatar.cc/400?img=5",
+        "joined_date": "2022-04-10"
+    },
+    {
+        "id": "2",
+        "name": "Liam Jackson",
+        "email": "liam.jackson@example.com",
+        "bio": "Nutritionist and wellness coach focused on mindful living and balanced lifestyles.",
+        "avatar": "https://i.pravatar.cc/400?img=6",
+        "joined_date": "2021-08-05"
+    },
+    {
+        "id": "3",
+        "name": "Emma Wilson",
+        "email": "emma.wilson@example.com",
+        "bio": "Avid reader and book reviewer with a passion for storytelling and literature.",
+        "avatar": "https://i.pravatar.cc/400?img=16",
+        "joined_date": "2020-11-15"
+    },
+    {
+        "id": "4",
+        "name": "Oliver Davis",
+        "email": "oliver.davis@example.com",
+        "bio": "DIY enthusiast and gardener sharing tips for sustainable living and home projects.",
+        "avatar": "https://i.pravatar.cc/400?img=60",
+        "joined_date": "2021-03-25"
+    },
+    {
+        "id": "5",
+        "name": "Ava Martin",
+        "email": "ava.martin@example.com",
+        "bio": "Home baker and food lover who enjoys experimenting with recipes and flavors.",
+        "avatar": "https://i.pravatar.cc/400?img=38",
+        "joined_date": "2023-01-12"
+    },
+    {
+        "id": "6",
+        "name": "Emily Johnson",
+        "email": "emily.johnson@example.com",
+        "bio": "Meditation advocate and mental health writer, helping others find peace and focus.",
+        "avatar": "https://i.pravatar.cc/400?img=48",
+        "joined_date": "2022-06-18"
+    },
+    {
+        "id": "7",
+        "name": "David Lee",
+        "email": "david.lee@example.com",
+        "bio": "Food explorer documenting culinary traditions and global street food culture.",
+        "avatar": "https://i.pravatar.cc/400?img=64",
+        "joined_date": "2019-12-22"
+    },
+    {
+        "id": "8",
+        "name": "Nathan Clark",
+        "email": "nathan.clark@example.com",
+        "bio": "Astronomy geek and outdoor enthusiast encouraging everyone to look up at the stars.",
+        "avatar": "https://i.pravatar.cc/400?img=60",
+        "joined_date": "2020-09-05"
+    },
+    {
+        "id": "9",
+        "name": "Sophia Edwards",
+        "email": "sophia.edwards@example.com",
+        "bio": "Fashion historian and stylist passionate about vintage trends and classic designs.",
+        "avatar": "https://i.pravatar.cc/400?img=10",
+        "joined_date": "2021-07-10"
+    }
+]

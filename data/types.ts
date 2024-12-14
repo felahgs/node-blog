@@ -1,31 +1,21 @@
-export interface CompaniesData {
-  [companyId: string]: CompanyData | Company[];
-  companies: Company[];
+export interface PostData {
+  id: string;
+  title: string;
+  author: string;
+  published_date: string;
+  tags: Array<string>;
+  summary: string;
+  content: string;
+  likes: number;
+  comments_count: number;
+  is_published: boolean;
 }
 
-export interface Company {
+export interface UserData {
   id: string;
   name: string;
-}
-
-export interface CompanyData {
-  assets: Asset[];
-  locations: Location[];
-}
-
-export interface Location {
-  id: string;
-  name: string;
-  parentId: string | null;
-}
-
-export interface Asset {
-  id: string;
-  locationId: string | null;
-  name: string;
-  parentId: string | null;
-  sensorType: string | null;
-  status: string | null;
-  gatewayId?: string;
-  sensorId?: string;
+  email: string;
+  bio: string;
+  avatar: string;
+  joined_date: string;
 }
