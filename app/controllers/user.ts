@@ -1,24 +1,28 @@
 import { NextFunction, Request, Response } from "express";
 import * as userService from "@/services/user";
 
-export function listUsers(
+export async function listUsers(
   req: Request,
   res: Response,
   next: NextFunction
-): void {
+): Promise<void> {
   try {
-    const users = userService.listUsers();
+    const users = await userService.listUsers();
     res.status(200).json(users);
   } catch (error) {
     next(error);
   }
 }
 
-export function getUser(req: Request, res: Response, next: NextFunction): void {
+export async function getUser(
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> {
   const userId = req.params.userId;
 
   try {
-    const user = userService.getUser(userId);
+    const user = await userService.getUser(userId);
     res.status(200).json(user);
   } catch (error) {
     next(error);

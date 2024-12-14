@@ -5,7 +5,7 @@ export function errorHandler(
   err: Error,
   req: Request,
   res: Response,
-  _next: NextFunction,
+  _next: NextFunction
 ): void {
   if (err instanceof NotFoundError) {
     res.status(404).json({ message: err.message });

@@ -1,7 +1,7 @@
 import express from "express";
 import postsRoutes from "@/routes/posts";
 import usersRoute from "@/routes/users";
-import { errorHandler } from "./middlewares";
+import { errorHandler } from "./app/middlewares";
 
 const app = express();
 const port = 3030;

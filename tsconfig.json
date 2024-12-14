@@ -9,7 +9,7 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-        "@/*": ["./*"]
+        "@/*": ["./app/*"]
     }
   },
   "ts-node": {
