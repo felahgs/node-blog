@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
-    <%- include('../includes/head.ejs') %>
+  <%- include('../includes/head.ejs') %>
 </head>
 
-<body>
-    <p class="text-red-500">Hello, World!!
-    </p>
-
-
+<body class="h-screen">
+  <%- include('../includes/navbar.ejs') %>
+    <main class="flex items-center justify-center ">
+      <section class="mt-10 h-full w-full max-w-4xl bg-slate-300 flex">
+        <p>
+          Hello, World!!
+        </p>
+      </section>
+    </main>
 </body>
 
 </html>

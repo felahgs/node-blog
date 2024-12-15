@@ -21,6 +21,10 @@ app.get("/health", (req, res) => {
 app.use("/api", apiRoutes);
 app.use("/", pagesRoutes);
 
+app.use("", (req, res) => {
+  res.status(404).render("not-found", { path: "", pageTitle: "Not found" });
+});
+
 app.use(errorHandler);
 
 app.listen(port, () => {
