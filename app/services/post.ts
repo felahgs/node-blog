@@ -4,16 +4,16 @@ import { NotFoundError } from "@/errors/NotFoundError";
 
 const data = postJson;
 
-export function listPosts(): PostData[] {
-  return data;
+export async function listPosts(): Promise<PostData[]> {
+  return Promise.resolve(data);
 }
 
-export function getPost(postId: string): PostData {
+export async function getPost(postId: string): Promise<PostData> {
   const post = data.find((post) => post.id === postId);
 
   if (!post) {
     throw new NotFoundError(`Post with id "${postId}" not found.`);
   }
 
-  return post;
+  return Promise.resolve(post);
 }
