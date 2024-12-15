@@ -9,6 +9,8 @@ const app = express();
 const port = 3030;
 
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "/app/views"));
 app.set("view engine", "ejs");
 
