@@ -1,6 +1,6 @@
 import express from "express";
-import postsRoutes from "@/routes/posts";
-import usersRoute from "@/routes/users";
+import apiRoutes from "@/routes/api";
+
 import { errorHandler } from "./app/middlewares";
 
 const app = express();
@@ -12,8 +12,7 @@ app.get("/", (req, res) => {
   res.send("Health Check Ok!");
 });
 
-app.use("/posts", postsRoutes);
-app.use("/users", usersRoute);
+app.use("/api", apiRoutes);
 
 app.use(errorHandler);
 
