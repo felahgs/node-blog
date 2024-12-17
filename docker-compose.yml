@@ -1,0 +1,30 @@
+services:
+  postgres-db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "admin"
+    ports:
+      - "15432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+    networks:
+      - postgres-compose-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "fgsouza93@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "pgadmin!"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres-db
+    networks:
+      - postgres-compose-network
+
+networks:
+  postgres-compose-network:
+    driver: bridge
+volumes:
+  pgdata:
