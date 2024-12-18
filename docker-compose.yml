@@ -18,6 +18,8 @@ services:
       PGADMIN_DEFAULT_PASSWORD: "pgadmin!"
     ports:
       - "16543:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
     depends_on:
       - postgres-db
     networks:
@@ -28,3 +30,4 @@ networks:
     driver: bridge
 volumes:
   pgdata:
+  pgadmin-data:
