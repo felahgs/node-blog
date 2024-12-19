@@ -7,23 +7,66 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
-  id        Int      @id @default(autoincrement())
-  title     String   @db.VarChar(255)
-  authorId  Int
-  createdAt DateTime @default(now()) @db.Timestamp(6)
-  summary   String?
-  content   String?
-  published Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+model User {
+  id           Int           @id(map: "users_pkey") @default(autoincrement())
+  name         String        @db.VarChar(255)
+  email        String        @unique(map: "users_email_key") @db.VarChar(255)
+  bio          String?
+  avatar       String?
+  joined_date  DateTime      @db.Date
+  posts        Post[]
+  likes        PostLike[]
+  comments     Comment[]
+  commentLikes CommentLike[]
 }
 
-model User {
-  id          Int      @id(map: "users_pkey") @default(autoincrement())
-  name        String   @db.VarChar(255)
-  email       String   @unique(map: "users_email_key") @db.VarChar(255)
-  bio         String?
-  avatar      String?
-  joined_date DateTime @db.Date
-  posts       Post[]
+model Post {
+  id            Int        @id @default(autoincrement())
+  title         String     @db.VarChar(255)
+  authorId      Int
+  totalComments Int
+  totalLikes    Int
+  createdAt     DateTime   @default(now()) @db.Timestamp(6)
+  summary       String?
+  content       String?
+  published     Boolean    @default(false)
+  author        User       @relation(fields: [authorId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  comment       Comment[]
+  tags          Tag[]
+  likes         PostLike[]
+}
+
+model Tag {
+  id    Int    @id @default(autoincrement())
+  name  String @db.VarChar(255)
+  posts Post[]
+}
+
+model PostLike {
+  id     Int  @id(map: "posts_like_pkey") @default(autoincrement())
+  userId Int
+  postId Int
+  post   Post @relation(fields: [postId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  user   User @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Comment {
+  id         Int           @id(map: "comments_pkey") @default(autoincrement())
+  content    String
+  createdAt  DateTime      @default(now()) @db.Timestamp(6)
+  totalLikes Int
+  edited     Boolean       @default(false)
+  postId     Int
+  userId     Int
+  post       Post          @relation(fields: [postId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  user       User          @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  likes      CommentLike[]
+}
+
+model CommentLike {
+  id        Int     @id(map: "comments_like_pkey") @default(autoincrement())
+  userId    Int
+  commentId Int
+  comment   Comment @relation(fields: [commentId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  user      User    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }
