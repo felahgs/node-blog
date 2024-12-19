@@ -1,12 +1,7 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response } from "express";
 import { NotFoundError, ValidationError } from "../errors";
 
-export function errorHandler(
-  err: Error,
-  req: Request,
-  res: Response,
-  _next: NextFunction
-): void {
+export function errorHandler(err: Error, req: Request, res: Response): void {
   if (err instanceof NotFoundError) {
     res.status(404).json({ message: err.message });
   } else if (err instanceof ValidationError) {

@@ -7,7 +7,7 @@ export interface PostData {
   summary: string;
   content: string;
   likes: number;
-  comments_count: number;
+  // comments_count: number;
   is_published: boolean;
 }
 
