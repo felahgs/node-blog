@@ -1,13 +1,13 @@
 import { NextFunction, Request, Response } from "express";
 import * as postService from "@/services/post";
 
-export function listPosts(
+export async function listPosts(
   req: Request,
   res: Response,
-  next: NextFunction
-): void {
+  next: NextFunction,
+): Promise<void> {
   try {
-    const posts = postService.listPosts();
+    const posts = await postService.listPosts();
     res.status(200).json(posts);
   } catch (error) {
     next(error);

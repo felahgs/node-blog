@@ -24,8 +24,8 @@ model Post {
   id            Int        @id @default(autoincrement())
   title         String     @db.VarChar(255)
   authorId      Int
-  totalComments Int
-  totalLikes    Int
+  totalComments Int        @default(0)
+  totalLikes    Int        @default(0)
   createdAt     DateTime   @default(now()) @db.Timestamp(6)
   summary       String?
   content       String?
@@ -54,7 +54,7 @@ model Comment {
   id         Int           @id(map: "comments_pkey") @default(autoincrement())
   content    String
   createdAt  DateTime      @default(now()) @db.Timestamp(6)
-  totalLikes Int
+  totalLikes Int           @default(0)
   edited     Boolean       @default(false)
   postId     Int
   userId     Int

@@ -1,11 +1,22 @@
 import postJson from "@/data/posts.json";
 import { PostData } from "@/data/types";
 import { NotFoundError } from "@/errors/NotFoundError";
+import prisma from "prisma/prismaClient";
 
 const data = postJson;
+export async function listPosts() {
+  const posts = prisma.post.findMany({
+    orderBy: [{ createdAt: "desc" }],
+    include: {
+      author: {
+        select: {
+          name: true,
+        },
+      },
+    },
+  });
 
-export async function listPosts(): Promise<PostData[]> {
-  return Promise.resolve(data);
+  return posts;
 }
 
 export async function getPost(postId: string): Promise<PostData> {
