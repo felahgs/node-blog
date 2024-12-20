@@ -33,10 +33,6 @@ async function main() {
   app.listen(port, () => {
     console.log(`Running server on port ${port}`);
   });
-
-  const allUsers = await prisma.user.findMany();
-  console.log(`Total users: ${allUsers.length}`);
-  console.log("Users", allUsers);
 }
 
 main()

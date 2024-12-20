@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import * as postService from "@/services/post";
+import { NotFoundError } from "@/errors";
 
 export async function renderPostPage(
   req: Request,
@@ -11,6 +12,12 @@ export async function renderPostPage(
     const post = await postService.getPost(postId);
     res.status(200).render("post", { pageTitle: post.title, post: post });
   } catch (error) {
-    next(error);
+    if (error instanceof NotFoundError) {
+      res
+        .status(404)
+        .render("not-found", { path: req.originalUrl, pageTitle: "Not Found" });
+    } else {
+      next(error);
+    }
   }
 }
