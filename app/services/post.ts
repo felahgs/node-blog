@@ -23,6 +23,7 @@ export async function getPost(postId: string | number) {
     include: {
       author: {
         select: {
+          id: true,
           name: true,
           avatar: true,
         },
