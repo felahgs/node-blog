@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import * as userService from "@/services/user";
-import { listUsers, getUser } from "../user";
+import { listUsers, getUser } from "../api/user";
 
 jest.mock("@/services/user");
 

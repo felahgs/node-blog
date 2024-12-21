@@ -22,7 +22,7 @@
                 <p>
                   by <%= post.author.name %> |
                     <%= dateFromNow(post.createdAt) %>
-                      (<%= format(new Date(post.createdAt), 'MMM d, yyyy' ) %>)
+                      (<%= formatDate(post.createdAt) %>)
                 </p>
               </div>
             </a>

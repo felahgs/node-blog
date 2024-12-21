@@ -8,10 +8,10 @@
             <%= post.title %>
           </h1>
           <h2>
-            by: <%= post.author %>
+            by: <%= post.author.name %>
           </h2>
           <h2>
-            <%= post.published_date %>
+            <%= formatDate(new Date(post.createdAt)) %>
           </h2>
           <div class="mt-4">
             <p class="pb-6 mb-6 text-gray-700 text-xl border-b border-slate-300">

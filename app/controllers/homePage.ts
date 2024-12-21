@@ -1,9 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 
-import { dateFromNow } from "@/utils/dates";
-
+import { dateFromNow, formatDate } from "@/utils/dates";
 import * as postService from "@/services/post";
-import { format } from "date-fns";
 
 export async function renderHomePage(
   req: Request,
@@ -16,7 +14,7 @@ export async function renderHomePage(
       pageTitle: "Home",
       posts: posts,
       dateFromNow: dateFromNow,
-      format: format,
+      formatDate: formatDate,
     });
   } catch (error) {
     next(error);

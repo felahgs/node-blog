@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import * as postService from "@/services/post";
+import { NotFoundError } from "@/errors";
 
 export async function listPosts(
   req: Request,
@@ -19,6 +20,9 @@ export function getPost(req: Request, res: Response, next: NextFunction): void {
 
   try {
     const post = postService.getPost(postId);
+    if (!post) {
+      throw new NotFoundError(`Post with id "${postId}" not found.`);
+    }
     res.status(200).json(post);
   } catch (error) {
     next(error);
