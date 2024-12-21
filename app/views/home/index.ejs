@@ -3,32 +3,9 @@
   <main class="flex items-center justify-center">
     <section class="flex flex-col mt-2 h-full w-full max-w-4xl">
       <% for( post of posts ) { %>
-        <div class="px-6 border-b border-slate-300">
-          <div class="py-5">
-            <a href="post/<%= post.id %>">
-              <div class="">
-                <h2 class="font-bold text-2xl">
-                  <%= post.title %>
-                </h2>
-                <h3 class="font-semibold text-md">
-                  <%= post.summary %>
-                </h3>
-              </div>
-              <p class="text-gray-600">
-                <%= post.content %>
-              </p>
-
-              <div class="text-gray-600 text-xs mt-4">
-                <p>
-                  by <%= post.author.name %> |
-                    <%= dateFromNow(post.createdAt) %>
-                      (<%= formatDate(post.createdAt) %>)
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <% } %>
+        <%- include('../includes/post_card.ejs', {post: post, author: post.author, formatDate: formatDate, dateFromNow:
+          dateFromNow}) %>
+          <% } %>
     </section>
   </main>
 

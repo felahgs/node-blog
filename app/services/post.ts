@@ -1,4 +1,4 @@
-import prisma from "prisma/prismaClient";
+import prisma from "@/../prisma/prismaClient";
 
 export function listPosts() {
   const posts = prisma.post.findMany({
@@ -7,6 +7,7 @@ export function listPosts() {
       author: {
         select: {
           name: true,
+          id: true,
         },
       },
     },
