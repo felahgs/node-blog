@@ -1,7 +1,7 @@
 <%- include('../includes/header.ejs') %>
 
   <main class="flex items-center justify-center">
-    <section class="flex flex-col mt-2 h-full w-full max-w-4xl">
+    <section class="flex flex-col mt-2 h-full w-full max-w-4xl px-2">
       <% for( post of posts ) { %>
         <%- include('../includes/post_card.ejs', {post: post, author: post.author, formatDate: formatDate, dateFromNow:
           dateFromNow}) %>

@@ -1,26 +1,26 @@
 <%- include('../includes/header.ejs') %>
 
-  <main class="flex items-start justify-center py-10">
+  <main class="flex items-start justify-center md:py-10">
     <div class="flex flex-col md:flex-row max-w-6xl w-full  md:shadow-lg md:rounded-lg">
       <!-- User Profile Section -->
-      <section class="w-full md:w-1/4 p-6 bg-white md:rounded-l-lg ">
-        <div class="flex flex-col md:sticky top-20 items-center md:items-start">
-          <div class="text-center pb-2">
+      <section class="w-full md:w-1/4 p-6 bg-white md:rounded-l-lg">
+        <div class="flex flex-col md:sticky top-20 items-center content-center md:items-start">
+          <div class="flex flex-col items-center pb-4">
             <img class="size-32 rounded-full" src="<%= user.avatar %>" alt="user image">
             <p class="text-lg font-semibold">
               <%= user.name %>
             </p>
+            <p class="text-sm text-gray-500">
+              <%= user.email %>
+            </p>
           </div>
-          <p class="text-sm text-gray-500">
-            <%= user.email %>
-          </p>
           <p class="text-sm text-gray-500">
             Joined: <%= formatDate(user.joined_date) %>
           </p>
           <p class="text-sm text-gray-500">
             <%= user.posts.length %> articles published
           </p>
-          <p class="text-sm text-gray-700 mt-6">
+          <p class="text-sm text-gray-700 pt-4">
             <%= user.bio %>
           </p>
         </div>
