@@ -6,7 +6,7 @@ import pagesRoutes from "@/routes/pages";
 
 import prisma from "./prisma/prismaClient";
 
-import { errorHandler } from "./app/middlewares";
+import { errorHandler, keycloak } from "./app/middlewares";
 
 const app = express();
 const port = 3030;
@@ -29,6 +29,7 @@ async function main() {
   });
 
   app.use(errorHandler);
+  app.use(keycloak.middleware());
 
   app.listen(port, () => {
     console.log(`Running server on port ${port}`);
