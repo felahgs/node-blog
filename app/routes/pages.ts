@@ -1,7 +1,5 @@
 import { Router } from "express";
-import { renderHomePage } from "@/controllers/homePage";
-import { renderPostPage } from "@/controllers/postPage";
-import { renderUserPage } from "@/controllers/userPage";
+import { renderUserPage, renderHomePage, renderPostPage } from "@/controllers";
 
 const router = Router();
 
